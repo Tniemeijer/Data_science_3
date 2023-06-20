@@ -19,6 +19,8 @@ class JunkEstimator:
         if self.mode == None:
             return self._standard_prediction(len_predictions)
         else:
+            #Getting a fair result from a biased coin.
+            #https://en.wikipedia.org/wiki/Fair_coin
             return self._neumann_prediction(len_predictions)
     
 
